@@ -7,10 +7,25 @@ function App() {
   let [counter, setCounter] =  useState(5)
   
   const addValue = () => {
-    if(counter < 20) {
-      counter = counter + 1
-      setCounter(counter);
-    }
+
+    // Interview Questions 
+    // Fiber concept
+    // setCounter(counter+1);
+    // setCounter(counter+1);
+    // setCounter(counter+1);
+    // setCounter(counter+1);
+
+
+    setCounter((preCounter)=> preCounter + 1);
+    setCounter((preCounter)=> preCounter + 1);
+    setCounter((preCounter)=> preCounter + 1);
+    setCounter((preCounter)=> preCounter + 1);
+
+
+    // if(counter < 20) {
+    //   counter = counter + 1
+    //   setCounter(counter);
+    // }
   }
 
   
